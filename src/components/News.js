@@ -7,13 +7,13 @@ export class News extends Component {
       <div className="container my-3">
         <h2>NewsHub - Top Headlines</h2>
         <div className="row ">
-          <div className="col-md-3">
+          <div className="col-md-3 mx-3">
             <NewsItem title="mytitle" description="mydesc" />
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3 mx-3">
             <NewsItem title="mytitle" description="mydesc" />
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3 mx-3">
             <NewsItem title="mytitle" description="mydesc" />
           </div>
         </div>

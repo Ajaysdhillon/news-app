@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import NewsItem from "./NewsItem";
 
+d3ee9d93f55a49258e2df266ff0141f9;
+
 export class News extends Component {
   articles = [
     {
@@ -287,6 +289,14 @@ export class News extends Component {
       articles: this.articles,
       loading: false,
     };
+  }
+
+  async componentDidMount() {
+    let url =
+      "https://newsapi.org/v2/top-headlines?country=in&apiKey=d3ee9d93f55a49258e2df266ff0141f9";
+    let data = await fetch(url);
+    let parsedData = await data.json();
+    this.setState({ articles: parsedData.articles });
   }
   render() {
     return (

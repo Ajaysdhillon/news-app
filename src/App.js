@@ -13,7 +13,7 @@ export default class App extends Component {
             <Route exact path="/">
               <News
                 key="general"
-                pageSize={5}
+                pageSize={6}
                 country="in"
                 category="general"
               />
